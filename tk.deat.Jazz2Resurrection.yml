@@ -1,6 +1,6 @@
 app-id: tk.deat.Jazz2Resurrection
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: jazz2
 finish-args:
@@ -21,8 +21,8 @@ modules:
       - --without-portaudiocpp
     cleanup:
       - /include
-      - "*.la"
-      - "*.so"
+      - '*.la'
+      - '*.so'
       - /lib/pkgconfig
       - /share/doc
     sources:
@@ -40,7 +40,7 @@ modules:
       - type: git
         url: https://github.com/deathkiller/jazz2-native.git
         tag: 2.5.0
-        commit: f44678d84d9943251933f79408394a3919f37531
+        commit: 47c03f99246a181879477d5943c3f016e91aab05
         x-checker-data:
-            type: git
-            tag-pattern: ^([\d.]+)$
+          type: git
+          tag-pattern: ^([\d.]+)$
