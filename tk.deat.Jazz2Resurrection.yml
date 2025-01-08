@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/deathkiller/jazz2-native.git
-        tag: 3.0.0
-        commit: a28bca3e4b21cfe9f56102401ca385e4447474d8
+        tag: 3.1.0
+        commit: eac338d6cfee1aa41dd116789fb304a196b2f35a
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
