@@ -5,6 +5,7 @@ sdk: org.freedesktop.Sdk
 command: jazz2
 finish-args:
   - --share=ipc
+  - --share=network
   - --socket=wayland
   - --socket=fallback-x11
   - --socket=pulseaudio
@@ -27,8 +28,8 @@ modules:
       - /share/doc
     sources:
       - type: archive
-        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.3+release.autotools.tar.gz
-        sha256: 2cf8369b7916b09264f3f14b9fb6cef35a6e9bee0328dec4f49d98211ccfd722
+        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.13+release.autotools.tar.gz
+        sha256: dcd7cde4f9c498eb496c4556e1c1b81353e2a74747e8270a42565117ea42e1f1
   - name: jazz2-native
     buildsystem: cmake-ninja
     config-opts:
@@ -39,8 +40,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/deathkiller/jazz2-native.git
-        tag: 3.2.0
-        commit: d32c39de25ae0a16cd7d1f1ce972b1a951d234c9
+        tag: 3.3.0
+        commit: 736efcffb66f85c4ae699d88781d21cef1e76af5
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
