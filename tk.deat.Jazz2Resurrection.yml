@@ -33,6 +33,7 @@ modules:
   - name: jazz2-native
     buildsystem: cmake-ninja
     config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
       - -DNCINE_BUILD_FLATPAK=ON
       - -DNCINE_DOWNLOAD_DEPENDENCIES=OFF
       - -DNCINE_PREFERRED_BACKEND=SDL2
