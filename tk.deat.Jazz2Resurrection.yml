@@ -41,8 +41,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/deathkiller/jazz2-native.git
-        tag: 3.7.0
-        commit: 5747da83b51d6c477a96fa3d874792435eeb636a
-        x-checker-data:
-          type: git
-          tag-pattern: ^([\d.]+)$
+        # Last revision before the application was renamed to "dev.de4th.jazz2": every later one installs
+        # its metainfo and desktop file under the new ID, which cannot be built under this one. It also
+        # carries the build fix that the 3.7.0 tag is missing (a bare "-lZstd" on the link line).
+        commit: 6f01918528421c2ea634c12f43b41866ee55cb55
